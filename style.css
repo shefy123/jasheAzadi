@@ -1,0 +1,84 @@
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(202, 241, 197, 0.897);
+    font-family: 'Great Vibes', cursive;
+}
+header {   
+    background-position: right;
+    background-image: url(images/baloon.jpg);
+    height: 50px;
+    width: 100%;
+}
+#circle-container {
+    height: 100vh;
+}
+.carousel-item {
+    height: 300px;
+}
+.carousel-inner {
+    -webkit-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 13px 0px rgba(0,0,0,1);
+}
+
+.numb {
+    font-size: 80px;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    word-spacing: 1.5px;
+}
+
+.carousel-caption > .animated {
+    font-size: 80px !important;
+    margin-bottom: 0em !important;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+.carousel-caption > .august {
+    font-size: 80px !important;
+    margin-bottom: 0.5em !important;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.circle {
+    height:100%;
+    width:100%;
+    border-radius: 1000px;
+    border: 2px solid black;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: all 3s;
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75); 
+}
+
+@media screen and (max-width: 400px) {
+    numb {
+        font-size: 60px;
+        margin-bottom: 3em;
+        font-weight: bold;
+
+    }
+
+    .carousel-caption > .august {
+        font-size: 40px !important;
+        margin-bottom: 2.5em;
+        font-weight: bold;
+        letter-spacing: 4px;
+        padding-bottom: 1.5em;
+    }
+    .carousel-caption > .animated {
+        font-size: 40px !important;
+      
+        padding-bottom: 1em;
+        font-weight: bold;
+        letter-spacing: 4px;
+    }
+}

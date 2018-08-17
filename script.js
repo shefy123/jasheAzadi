@@ -5,23 +5,16 @@ function getRandomInt(min, max) {
   }
 
 function changeCircle(index) {
-        const bottom =  parseInt(Math.random()*40); 
-        const left =  parseInt(Math.random()*200);
-        const right =  parseInt(Math.random()*200); 
+       
         const divX = document.querySelector(`#div-${index}`); 
+        const height = getRandomInt (50 ,100);
 
-        divX.style.bottom = `${bottom}vh`;
-        divX.style.right = `${right}vh`;
-        divX.style.left = `${left}vh`;
+        divX.style.bottom = `${ parseInt(Math.random()*22)}vw`; 
+        divX.style.right = `${ parseInt(Math.random()*100)}vw`;
 
-        const height = getRandomInt (40 ,100);
-  
-
-        // divX.innerHTML = height;
 
         divX.style.height =`${height}px`;
         divX.style.width =`${height}px`;
-        // divX.style["font-size"] = `${height/3}px`;
         divX.style["border-width"] = `${height/50}px`;
 
         const red = parseInt(Math.random() *256 ); 
@@ -29,8 +22,6 @@ function changeCircle(index) {
         const blue = parseInt(Math.random() *256 ); 
 
         divX.style["border-color"] =` rgb(${0}, ${green}, ${0})`;
-        // divX.style.color =` rgb(${red}, ${green}, ${blue})`;
-        // divX.style.background =` rgb(${red}, ${green}, ${blue})`;
       
 }
 function initialize() {

@@ -27,7 +27,7 @@ function changeCircle(index) {
 function initialize() {
     let circleContainer = document.querySelector("#circle-container");
 
-    for (let i=0; i < 20; i++){
+    for (let i=0; i < 14; i++){
         circleContainer.innerHTML +=`<div id="div-${i}" class="circle" style="background-image:url('images/img.jpg')"></div>`
         changeCircle(i);
 
